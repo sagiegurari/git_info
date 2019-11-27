@@ -7,4 +7,4 @@ additional_profiles = [
 ]
 
 [env]
-CARGO_MAKE_CARGO_BUILD_TEST_FLAGS = { source = "${CARGO_MAKE_RUST_TARGET_OS}", default_value = "--lib", mapping = {"linux" = "${CARGO_MAKE_CARGO_ALL_FEATURES}" } }
+CARGO_MAKE_CARGO_BUILD_TEST_FLAGS = { source = "${CARGO_MAKE_RUST_TARGET_OS2}", default_value = "--lib", mapping = {"linux" = "${CARGO_MAKE_CARGO_ALL_FEATURES}" } }
