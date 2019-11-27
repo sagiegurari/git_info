@@ -1,0 +1,7 @@
+
+[config]
+additional_profiles = [
+    "ci-coverage-tasks",
+    "ci-all-build-tasks",
+    "publish-pre-cleanup"
+]

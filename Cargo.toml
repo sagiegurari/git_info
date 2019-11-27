@@ -1,0 +1,39 @@
+[package]
+name = "git_info"
+version = "0.1.0"
+authors = ["Sagie Gur-Ari <sagiegurari@gmail.com>"]
+description = "Extracts git repository information."
+license = "Apache-2.0"
+edition = "2018"
+documentation = "https://sagiegurari.github.io/git_info/api/git_info/index.html"
+homepage = "http://github.com/sagiegurari/git_info"
+repository = "https://github.com/sagiegurari/git_info.git"
+readme = "README.md"
+keywords = ["environment", "build"]
+categories = ["development-tools", "development-tools::build-utils"]
+include = [
+    "/benches/*",
+    "/docs/*",
+    "/examples/*",
+    "/src/*",
+    "/tests/*",
+    "/Cargo.toml",
+    "/LICENSE",
+    "/README.md",
+    "/Makefile.toml"
+]
+
+[badges.travis-ci]
+branch = "master"
+repository = "sagiegurari/git_info"
+
+[badges.appveyor]
+repository = "sagiegurari/git_info"
+service = "github"
+branch = "master"
+project_name = "sagiegurari/git_info"
+
+[badges.codecov]
+branch = "master"
+repository = "sagiegurari/git_info"
+service = "github"
