@@ -1,0 +1,5 @@
+var N=null,E="",T="t",U="u",searchIndex={};
+var R=["git_info","gitinfo","result","GitInfo"];
+
+searchIndex["git_info"]={"doc":R[0],"i":[[5,"get",R[0],"Returns the current git repository information.",N,[[],[R[1]]]],[0,"types",E,"types",N,N],[3,R[3],"git_info::types","Holds git info for the given repo directory",N,N],[12,"user_name",E,"User name",0,N],[12,"user_email",E,"User email",0,N],[12,"config",E,"Config key/value map",0,N],[12,"current_branch",E,"Current branch name",0,N],[12,"branches",E,"All branch names",0,N],[11,"new",E,"Returns new instance",0,[[],[R[1]]]],[11,"from",E,E,0,[[[T]],[T]]],[11,"into",E,E,0,[[],[U]]],[11,"to_owned",E,E,0,[[["self"]],[T]]],[11,"clone_into",E,E,0,[[[T],["self"]]]],[11,"try_from",E,E,0,[[[U]],[R[2]]]],[11,"try_into",E,E,0,[[],[R[2]]]],[11,"borrow_mut",E,E,0,[[["self"]],[T]]],[11,"borrow",E,E,0,[[["self"]],[T]]],[11,"type_id",E,E,0,[[["self"]],["typeid"]]],[11,"clone",E,E,0,[[["self"]],[R[1]]]],[11,"fmt",E,E,0,[[["formatter"],["self"]],[R[2]]]]],"p":[[3,R[3]]]};
+initSearch(searchIndex);addSearchOptions(searchIndex);

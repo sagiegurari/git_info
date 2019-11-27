@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["GitInfo","Holds git info for the given repo directory"]]});

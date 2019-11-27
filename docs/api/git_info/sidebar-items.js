@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["get","Returns the current git repository information."]],"mod":[["types","types"]]});
