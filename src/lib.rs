@@ -147,11 +147,7 @@ pub mod types;
 
 use crate::types::GitInfo;
 
-/// Returns true environment variable is defined.
-///
-/// # Arguments
-///
-/// * `key` - The environment variable name
+/// Returns the current git repository information.
 ///
 /// # Example
 ///

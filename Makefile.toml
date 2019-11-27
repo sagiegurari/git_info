@@ -5,3 +5,6 @@ additional_profiles = [
     "ci-all-build-tasks",
     "publish-pre-cleanup"
 ]
+
+[env]
+CARGO_MAKE_CARGO_BUILD_TEST_FLAGS = { source = "${CARGO_MAKE_RUST_TARGET_OS}", default_value = "--lib", mapping = {"linux" = "${CARGO_MAKE_CARGO_ALL_FEATURES}" } }
