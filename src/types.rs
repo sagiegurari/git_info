@@ -7,15 +7,21 @@
 #[path = "./types_test.rs"]
 mod types_test;
 
+use std::collections::HashMap;
+
 #[derive(Debug, Clone)]
 /// Holds git info for the given repo directory
 pub struct GitInfo {
-    /// user.name
+    /// User name
     pub user_name: Option<String>,
-    /// user.email
+    /// User email
     pub user_email: Option<String>,
-    /// branch name
-    pub branch: Option<String>,
+    /// Config key/value map
+    pub config: Option<HashMap<String, String>>,
+    /// Current branch name
+    pub current_branch: Option<String>,
+    /// All branch names
+    pub branches: Option<Vec<String>>,
 }
 
 impl GitInfo {
@@ -24,7 +30,9 @@ impl GitInfo {
         GitInfo {
             user_name: None,
             user_email: None,
-            branch: None,
+            config: None,
+            current_branch: None,
+            branches: None,
         }
     }
 }

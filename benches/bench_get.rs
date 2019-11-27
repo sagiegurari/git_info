@@ -9,8 +9,6 @@ fn get(bencher: &mut Bencher) {
     bencher.iter(|| {
         let info = git_info::get();
 
-        assert!(info.user_name.is_some());
-        assert!(info.user_email.is_some());
-        assert!(info.branch.is_some());
+        assert!(info.current_branch.is_some());
     });
 }

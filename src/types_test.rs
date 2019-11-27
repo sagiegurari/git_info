@@ -6,5 +6,7 @@ fn git_info_new() {
 
     assert!(git_info.user_name.is_none());
     assert!(git_info.user_email.is_none());
-    assert!(git_info.branch.is_none());
+    assert!(git_info.config.is_none());
+    assert!(git_info.current_branch.is_none());
+    assert!(git_info.branches.is_none());
 }
