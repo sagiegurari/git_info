@@ -116,6 +116,7 @@
 //!
 //!     println!("User Name: {}", info.user_name.unwrap());
 //!     println!("User Email: {}", info.user_email.unwrap());
+//!     println!("Dirty: {}", info.dirty.unwrap());
 //!     println!("Current Branch: {}", info.current_branch.unwrap());
 //!     println!("Config: {:#?}", info.config.unwrap());
 //!     println!("Branches: {:#?}", info.branches.unwrap());

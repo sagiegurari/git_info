@@ -4,6 +4,7 @@ fn main() {
     let info = git_info::get();
 
     assert!(info.config.is_some());
+    assert!(info.dirty.is_some());
     assert!(info.current_branch.is_some());
     assert!(info.branches.is_some());
 
