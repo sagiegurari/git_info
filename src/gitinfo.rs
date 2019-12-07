@@ -29,6 +29,25 @@ fn get_exit_code(exit_status: Result<ExitStatus, Error>) -> i32 {
     }
 }
 
+fn load_state(info: &mut GitInfo) {
+    let result = Command::new("git").arg("status").arg("--short").output();
+
+    match result {
+        Ok(output) => {
+            let exit_code = get_exit_code(Ok(output.status));
+
+            if exit_code == 0 {
+                let stdout = String::from_utf8_lossy(&output.stdout);
+                let line = stdout.trim();
+                let dirty = line.len() > 0;
+
+                info.dirty = Some(dirty);
+            }
+        }
+        Err(_) => (),
+    };
+}
+
 fn load_config(info: &mut GitInfo) {
     let result = Command::new("git").arg("config").arg("--list").output();
 
@@ -129,6 +148,7 @@ fn load_branches(info: &mut GitInfo) {
 pub(crate) fn get() -> GitInfo {
     let mut info = GitInfo::new();
 
+    load_state(&mut info);
     load_config(&mut info);
     load_from_config(&mut info);
     load_branches(&mut info);

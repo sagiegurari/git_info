@@ -16,6 +16,8 @@ pub struct GitInfo {
     pub user_name: Option<String>,
     /// User email
     pub user_email: Option<String>,
+    /// True if there are non commited changes
+    pub dirty: Option<bool>,
     /// Config key/value map
     pub config: Option<HashMap<String, String>>,
     /// Current branch name
@@ -30,6 +32,7 @@ impl GitInfo {
         GitInfo {
             user_name: None,
             user_email: None,
+            dirty: None,
             config: None,
             current_branch: None,
             branches: None,

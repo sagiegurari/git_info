@@ -5,6 +5,7 @@ fn get_existing() {
     let info = get();
 
     assert!(info.config.is_some());
+    assert!(info.dirty.is_some());
     assert!(info.current_branch.is_some());
     assert!(info.branches.is_some());
 
