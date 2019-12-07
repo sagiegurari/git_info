@@ -36,6 +36,9 @@
 <span id="36">36</span>
 <span id="37">37</span>
 <span id="38">38</span>
+<span id="39">39</span>
+<span id="40">40</span>
+<span id="41">41</span>
 </pre><div class="example-wrap"><pre class="rust ">
 <span class="doccomment">//! # types</span>
 <span class="doccomment">//!</span>
@@ -55,6 +58,8 @@
     <span class="kw">pub</span> <span class="ident">user_name</span>: <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">String</span><span class="op">&gt;</span>,
     <span class="doccomment">/// User email</span>
     <span class="kw">pub</span> <span class="ident">user_email</span>: <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">String</span><span class="op">&gt;</span>,
+    <span class="doccomment">/// True if there are non commited changes</span>
+    <span class="kw">pub</span> <span class="ident">dirty</span>: <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">bool</span><span class="op">&gt;</span>,
     <span class="doccomment">/// Config key/value map</span>
     <span class="kw">pub</span> <span class="ident">config</span>: <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">HashMap</span><span class="op">&lt;</span><span class="ident">String</span>, <span class="ident">String</span><span class="op">&gt;&gt;</span>,
     <span class="doccomment">/// Current branch name</span>
@@ -69,6 +74,7 @@
         <span class="ident">GitInfo</span> {
             <span class="ident">user_name</span>: <span class="prelude-val">None</span>,
             <span class="ident">user_email</span>: <span class="prelude-val">None</span>,
+            <span class="ident">dirty</span>: <span class="prelude-val">None</span>,
             <span class="ident">config</span>: <span class="prelude-val">None</span>,
             <span class="ident">current_branch</span>: <span class="prelude-val">None</span>,
             <span class="ident">branches</span>: <span class="prelude-val">None</span>,
