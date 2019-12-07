@@ -76,7 +76,11 @@ fn load_from_config(info: &mut GitInfo) {
 }
 
 fn load_branches(info: &mut GitInfo) {
-    let result = Command::new("git").arg("branch").output();
+    let result = Command::new("git")
+        .arg("branch")
+        .arg("--list")
+        .arg("--no-color")
+        .output();
 
     match result {
         Ok(output) => {
@@ -91,14 +95,23 @@ fn load_branches(info: &mut GitInfo) {
                 for mut line in lines {
                     line = line.trim();
 
-                    let parts: Vec<&str> = line.split(' ').collect();
+                    let mut line_split = line.splitn(2, ' ');
 
-                    let name = if line.starts_with("*") {
-                        let value = parts[1];
-                        info.current_branch = Some(value.to_string());
-                        value
-                    } else {
-                        parts[0]
+                    let name = match line_split.next() {
+                        Some(marker_or_name) => {
+                            if marker_or_name == "*" {
+                                match line_split.next() {
+                                    Some(value) => {
+                                        info.current_branch = Some(value.to_string());
+                                        value
+                                    }
+                                    None => "",
+                                }
+                            } else {
+                                marker_or_name
+                            }
+                        }
+                        None => "",
                     };
 
                     if name.len() > 0 {
