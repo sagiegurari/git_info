@@ -1,7 +1,7 @@
 #![feature(test)]
-extern crate git_info;
 extern crate test;
 
+use git_info;
 use test::Bencher;
 
 #[bench]

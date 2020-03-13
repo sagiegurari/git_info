@@ -1,4 +1,4 @@
-extern crate git_info;
+use git_info;
 
 fn main() {
     let info = git_info::get();
