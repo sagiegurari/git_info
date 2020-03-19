@@ -112,7 +112,7 @@
 //! ```
 //! fn main() {
 //!     let info = git_info::get();
-//! 
+//!
 //!     println!("User Name: {}", info.user_name.unwrap());
 //!     println!("User Email: {}", info.user_email.unwrap());
 //!     println!("Dirty: {}", info.dirty.unwrap());
@@ -157,7 +157,7 @@ use crate::types::GitInfo;
 /// ```
 /// fn main() {
 ///     let info = git_info::get();
-/// 
+///
 ///     println!("User Name: {}", info.user_name.unwrap());
 ///     println!("User Email: {}", info.user_email.unwrap());
 ///     println!("Dirty: {}", info.dirty.unwrap());
