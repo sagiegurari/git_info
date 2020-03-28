@@ -1,6 +1,6 @@
 # git_info
 
-[![crates.io](https://img.shields.io/crates/v/git_info.svg)](https://crates.io/crates/git_info) ![Continuous Integration](https://github.com/sagiegurari/git_info/workflows/Continuous%20Integration/badge.svg?branch=master) [![codecov](https://codecov.io/gh/sagiegurari/git_info/branch/master/graph/badge.svg)](https://codecov.io/gh/sagiegurari/git_info)<br>
+[![crates.io](https://img.shields.io/crates/v/git_info.svg)](https://crates.io/crates/git_info) [![Continuous Integration](https://github.com/sagiegurari/git_info/workflows/Continuous%20Integration/badge.svg?branch=master)](https://github.com/sagiegurari/git_info/actions) [![codecov](https://codecov.io/gh/sagiegurari/git_info/branch/master/graph/badge.svg)](https://codecov.io/gh/sagiegurari/git_info)<br>
 [![license](https://img.shields.io/crates/l/git_info.svg)](https://github.com/sagiegurari/git_info/blob/master/LICENSE) [![Libraries.io for GitHub](https://img.shields.io/librariesio/github/sagiegurari/git_info.svg)](https://libraries.io/cargo/git_info) [![Documentation](https://docs.rs/git_info/badge.svg)](https://docs.rs/crate/git_info/) [![downloads](https://img.shields.io/crates/d/git_info.svg)](https://crates.io/crates/git_info)<br>
 [![Built with cargo-make](https://sagiegurari.github.io/cargo-make/assets/badges/cargo-make.svg)](https://sagiegurari.github.io/cargo-make)
 
