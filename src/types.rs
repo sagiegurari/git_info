@@ -9,7 +9,7 @@ mod types_test;
 
 use std::collections::HashMap;
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Default)]
 /// Holds git info for the given repo directory
 pub struct GitInfo {
     /// User name
@@ -29,13 +29,6 @@ pub struct GitInfo {
 impl GitInfo {
     /// Returns new instance
     pub fn new() -> GitInfo {
-        GitInfo {
-            user_name: None,
-            user_email: None,
-            dirty: None,
-            config: None,
-            current_branch: None,
-            branches: None,
-        }
+        Default::default()
     }
 }
