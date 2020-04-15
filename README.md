@@ -41,7 +41,7 @@ In order to use this library, just add it as a dependency:
 
 ```ini
 [dependencies]
-git_info = "*"
+git_info = "^0.1.1"
 ```
 
 ## API Documentation
