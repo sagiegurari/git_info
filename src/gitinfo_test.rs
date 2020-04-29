@@ -9,6 +9,12 @@ fn get_existing() {
     assert!(info.current_branch.is_some());
     assert!(info.branches.is_some());
 
+    let branches = info.branches.unwrap();
+    assert!(branches.contains(&info.current_branch.unwrap()));
+
+    assert!(info.head.last_commit_hash.is_some());
+    assert!(info.head.last_commit_hash_short.is_some());
+
     let config = info.config.unwrap();
 
     if config.contains_key("user.name") {
@@ -23,7 +29,4 @@ fn get_existing() {
             info.user_email.unwrap()
         );
     }
-
-    let branches = info.branches.unwrap();
-    assert!(branches.contains(&info.current_branch.unwrap()));
 }
