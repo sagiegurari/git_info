@@ -1,6 +1,6 @@
 ## CHANGELOG
 
-### v0.1.2
+### v0.1.2 (2020-04-29)
 
 * Add last commit hash and short prefix #4
 

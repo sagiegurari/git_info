@@ -62,7 +62,7 @@ In order to use this library, just add it as a dependency:
 
 ```ini
 [dependencies]
-git_info = "^0.1.1"
+git_info = "^0.1.2"
 ```
 
 ## API Documentation
