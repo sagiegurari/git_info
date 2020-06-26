@@ -22,6 +22,7 @@ This library main goal is to provide development/build tools such as [cargo-make
 ## Usage
 Simply include the library and invoke the get function to pull all info as follows:
 
+<!--{ "examples/example.rs" | lines: 3 | code: rust }-->
 ```rust
 fn main() {
     let info = git_info::get();
@@ -55,6 +56,7 @@ fn main() {
     println!("Branches: {:#?}", info.branches.unwrap_or(vec![]));
 }
 ```
+<!--{ end }-->
 
 <a name="installation"></a>
 ## Installation
