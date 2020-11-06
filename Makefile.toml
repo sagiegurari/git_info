@@ -1,12 +1,13 @@
 
 [env]
-CARGO_MAKE_CARGO_BUILD_TEST_FLAGS = { source = "${CARGO_MAKE_RUST_TARGET_OS}", default_value = "--lib", mapping = {"linux" = "${CARGO_MAKE_CARGO_ALL_FEATURES}" } }
+CARGO_MAKE_CARGO_BUILD_TEST_FLAGS = { source = "${CARGO_MAKE_RUST_TARGET_OS}", default_value = "--lib", mapping = { "linux" = "${CARGO_MAKE_CARGO_ALL_FEATURES}" } }
 
 [config]
 additional_profiles = [
-    "docs-all-modification-tasks",
-    "ci-coverage-tasks",
-    "ci-all-build-tasks",
-    "ci-static-code-analysis-tasks",
-    "publish-pre-cleanup"
+  "all-default-tasks",
+  "docs-all-modification-tasks",
+  "ci-coverage-tasks",
+  "ci-all-build-tasks",
+  "ci-static-code-analysis-tasks",
+  "publish-pre-cleanup",
 ]
