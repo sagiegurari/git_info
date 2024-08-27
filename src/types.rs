@@ -10,6 +10,7 @@ mod types_test;
 use std::collections::HashMap;
 
 #[derive(Debug, Clone, Default)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 /// Holds git head info
 pub struct Head {
     /// The last commit hash
@@ -26,6 +27,7 @@ impl Head {
 }
 
 #[derive(Debug, Clone, Default)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 /// Holds git info for the given repo directory
 pub struct GitInfo {
     /// User name
