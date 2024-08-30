@@ -1,5 +1,9 @@
 ## CHANGELOG
 
+### v0.1.3 (2024-08-30)
+
+* Enhancement: Serde support (as optional feature) #6 (thanks @SamuelMarks)
+
 ### v0.1.2 (2020-04-29)
 
 * Add last commit hash and short prefix #4

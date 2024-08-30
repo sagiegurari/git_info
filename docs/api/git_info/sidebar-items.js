@@ -1,1 +1,1 @@
-initSidebarItems({"fn":[["get","Returns the current git repository information."]],"mod":[["types","types"]]});
+window.SIDEBAR_ITEMS = {"fn":["get"],"mod":["types"]};
